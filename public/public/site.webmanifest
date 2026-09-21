@@ -1,0 +1,9 @@
+{
+  "name": "Bafliex Cakes Arena",
+  "short_name": "Bafliex Cakes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#251F50",
+  "icons": [{"src":"/images/bafliex-logo.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]
+}
