@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
   );
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-2 sm:px-6 pt-2.5 sm:pt-3 pb-2 transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-6 pt-3 pb-2 transition-all duration-300">
       <div
         className={`max-w-7xl mx-auto rounded-2xl transition-all duration-300 ${
           scrolled
@@ -28,9 +28,9 @@ export const Navbar: React.FC = () => {
             : "bg-[#FDFBF7]/90 backdrop-blur-md border border-[#D49B4B]/25 py-3.5 px-4 sm:px-6 shadow-sm"
         }`}
       >
-        <div className="flex items-center justify-between gap-1.5 sm:gap-3 bafliex-mobile-header-shell">
+        <div className="flex items-center justify-between gap-3">
           {/* Brand Logo */}
-          <a href="#" aria-label="Bafliex Cakes Arena — home" className="flex items-center gap-1.5 sm:gap-2.5 group shrink-0 min-w-0 bafliex-mobile-brand">
+          <a href="#" aria-label="Bafliex Cakes Arena — home" className="flex items-center gap-2.5 group shrink-0 min-w-0">
             {/* Full logo lockup (tablet & desktop) */}
             <BrandLogo
               variant="light"
@@ -42,13 +42,13 @@ export const Navbar: React.FC = () => {
               variant="light"
               compact
               priority
-              className="sm:hidden h-8 w-9 group-hover:rotate-3 transition-transform"
+              className="sm:hidden h-10 w-12 group-hover:rotate-3 transition-transform"
             />
             <div className="sm:hidden flex flex-col leading-tight">
-              <span className="font-serif-display italic font-bold text-[14px] text-[#E8721C]">
+              <span className="font-serif-display italic font-bold text-[17px] text-[#E8721C]">
                 Bafliex
               </span>
-              <span className="text-[7px] font-bold text-[#4C4590] tracking-[0.12em] uppercase">
+              <span className="text-[8px] font-bold text-[#4C4590] tracking-[0.18em] uppercase">
                 Cakes Arena
               </span>
             </div>
@@ -105,7 +105,7 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Direct Action CTAs */}
-          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0 bafliex-mobile-actions">
+          <div className="flex items-center gap-2 sm:gap-3">
             {/* Live Baker Indicator (Desktop) */}
             <div className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1E8E5A]/10 border border-[#1E8E5A]/25 text-[12px] font-medium text-[#1E8E5A]">
               <span className="relative flex h-2 w-2">
@@ -118,7 +118,7 @@ export const Navbar: React.FC = () => {
             {/* Direct Call Button */}
             <a
               href={`tel:${CONTACT_INFO.phoneRaw}`}
-              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 w-[72px] sm:w-auto px-2.5 sm:px-3.5 py-2.5 rounded-full border border-[#251F50]/20 bg-white/80 hover:bg-[#251F50] hover:text-white text-[12px] sm:text-sm font-semibold transition-all duration-200 shadow-xs bafliex-mobile-call shrink-0"
+              className="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-full border border-[#251F50]/20 bg-white/80 hover:bg-[#251F50] hover:text-white text-[#251F50] text-xs sm:text-sm font-semibold transition-all duration-200 shadow-xs"
               title="Call Baker Directly"
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#E8721C] group-hover:text-white" />
@@ -131,7 +131,7 @@ export const Navbar: React.FC = () => {
               href={defaultWhatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 w-[106px] sm:w-auto px-2.5 sm:px-5 py-2.5 rounded-full bg-[#1E8E5A] hover:bg-[#16794B] text-white text-[12px] sm:text-sm font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 bafliex-mobile-whatsapp shrink-0"
+              className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-full bg-[#1E8E5A] hover:bg-[#16794B] text-white text-xs sm:text-sm font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
             >
               <MessageCircle className="w-4 h-4 fill-white/20" />
               <span className="hidden min-[420px]:inline">WhatsApp Order</span>
@@ -142,7 +142,7 @@ export const Navbar: React.FC = () => {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle Menu"
-              className="lg:hidden inline-flex items-center justify-center w-11 h-11 p-0 rounded-xl text-[#251F50] bg-white/95 border border-[#D49B4B]/30 shadow-sm hover:bg-[#251F50]/5 transition-colors relative z-[80] shrink-0 bafliex-mobile-menu"
+              className="lg:hidden p-2 rounded-xl text-[#251F50] hover:bg-[#251F50]/5 transition-colors"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
